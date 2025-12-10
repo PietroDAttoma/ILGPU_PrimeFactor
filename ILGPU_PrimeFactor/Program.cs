@@ -181,7 +181,7 @@ class Program
                 var factors = new long[expandedCount];
                 Array.Copy(factorsAll, factors, expandedCount);
                 // 🔑 Rimuovi duplicati e ordina
-                var distinctPrimes = string.Join(", ", new HashSet<long>(factors));
+                var distinctPrimes = string.Join(", ", new SortedSet<long>(factors));
                 Console.WriteLine($"Fattori primi di {n}: {distinctPrimes}");
             }
 
